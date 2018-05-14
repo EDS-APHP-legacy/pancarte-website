@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="custom.css">
+  </head>
+  <body>
+    <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary" style="font-size:1.2em">
+        <a class="navbar-brand" style="color:#fff;font-size:1.2rem">Pancarte Project</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link" href="acquisition.html">Acquisition</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="storage.html">Storage (White paper)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="visualization.html">Visualization</a>
+	    </li>
+	  </ul>
+
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/EDS-APHP" target="_blank">github/EDS-APHP</a>
+            </li>
+          </ul>
+
+        </div>
+    </div>
+
+    <div class="container">
+      <div class="bs-docs-section clearfix" style="margin-top:100px;">
+
+
+        <!-- Blockquotes -->
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="bs-component">
+              <blockquote class="blockquote">
+                <p class="mb-0 text-center"><i>A project to solve the need to acquire, store, analyze and visualize the massive amount of data created by any kind of medical monitors.</i></p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <img style="margin-top: 50px; margin-bottom: 50px;" src="global.v2-notitle.png" class="img-fluid" alt="Pancarte Architecture" usemap="#archilinks">
+
+      <map name="archilinks">
+        <area shape="rect" coords="334,620,510,756" href="acquisition.html"> <!-- Kafka -->
+        <area shape="rect" coords="130,790,713,1228" href="acquisition.html"> <!-- LightICE -->
+        <area shape="rect" coords="940,940,1234,1160" href="acquisition.html"> <!-- Monitor -->
+        <area shape="rect" coords="77,20,778,564" href="storage.html"> <!-- Storage -->
+        <area shape="rect" coords="882,10,1362,258" href="visualization.html"> <!-- pancarte-front -->
+        <area shape="rect" coords="882,330,1362,560" href="visualization.html"> <!-- pancarte-backend -->
+        <area shape="rect" coords="1010,640,1235,865" href="visualization.html"> <!-- Hospital -->
+      </map>
+
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Module</th>
+            <th scope="col">Sub-project</th>
+            <th scope="col">State</th>
+            <th scope="col">Available for</th>
+            <th scope="col">Developped by</th>
+            <th scope="col">Scheduled for</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-success">
+            <td>Acquisition</td>
+            <td><a target="_blank" href="https://github.com/EDS-APHP/LightICE">LightICE</a></td>
+            <td>Well tested, Running (Philips)</td>
+            <td>BCT - Réa-chir</td>
+            <td>AP-HP (previously MD PnP)</td>
+            <td>Available</td>
+          </tr>
+          <tr class="table-success">
+            <td>Acquisition</td>
+            <td><a target="_blank" href="https://kafka.apache.org">Kafka</a></td>
+            <td>Running</td>
+            <td>BCT - Réa-chir</td>
+            <td>Apache</td>
+            <td>Available</td>
+          </tr>
+          <tr class="table-info">
+            <td>Storage</td>
+            <td><a target="_blank" href="https://github.com/EDS-APHP/pancarte-db">pancarte-db</a></td>
+            <td>POC as of now, ongoing tests</td>
+            <td>BCT - Réa-chir</td>
+            <td>AP-HP</td>
+            <td>June 2018</td>
+          </tr>
+          <tr class="table-danger">
+            <td>Visualization</td>
+            <td><a target="_blank" href="https://github.com/EDS-APHP/pancarte-backend">pancarte-backend</a></td>
+            <td>In active development</td>
+            <td>-</td>
+            <td>AP-HP</td>
+            <td>Fall 2018</td>
+          </tr>
+          <tr class="table-danger">
+            <td>Visualization</td>
+            <td><a target="_blank" href="https://github.com/EDS-APHP/pancarte-front">pancarte-front</a></td>
+            <td>In active development</td>
+            <td>-</td>
+            <td>AP-HP</td>
+            <td>Fall 2018</td>
+          </tr>
+        </tbody>
+      </table> 
+
+      <footer id="footer">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p>Project developed and maintained by the AP-HP, for the AP-HP</p>
+            <p>Code released under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="custom.js"></script>
+    <script type="text/javascript">
+      imageMapResize();
+    </script>
+  </body>
+</html>
+

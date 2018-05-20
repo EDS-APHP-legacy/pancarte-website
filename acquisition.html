@@ -47,10 +47,36 @@
                 <p class="mb-0">
                   This module is dedicated to the development of a monitor-agnostic data collection software: LightICE (based on the renowned <a href="https://github.com/mdpnp/mdpnp" target="_blank">OpenICE</a> project).<br>This page also provides information on how to plug a monitor in this system (hardware considerations).
                   <br><br>
+                  Monitor-data consists of:
+                  <ul>
+                    <li>Waveforms (high frequency timeseries - constant frequency), such as EKG (Electrocardiography).</li>
+                    <li>Numerics (low frequency timeseries), mainly derived data such as Heart rate</li>
+                    <li>Alerts</li>
+                    <li>Device operational data</li>
+                  </ul>
+                  <br>
                   Source code: <a target="_blank" href="https://github.com/EDS-APHP/LightICE">github.com/EDS-APHP/LightICE</a>
                 </p>
               </blockquote>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <title>Standardization</title>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="bs-component">
+            <blockquote class="blockquote">
+              <p class="mb-0">
+                One of the main problem with the monitor-data acquisition is the absence of communication standard. Every brand has its unique way of communicating with other applications.
+                <br>
+                The <a href="https://en.wikipedia.org/wiki/ISO/IEEE_11073" target="_blank">IEEE 11073</a> standard created a detailed solution to address the problem of standardized communications for health care monitors.
+                <br><br>
+                The LightICE project, thanks to its predecessor OpenICE, implements the <a href="https://wiki.ihe.net/index.php/PCD_Profile_Rosetta_Terminology_Mapping_Overview" target="_blank">Rosetta terminology mapping</a> that is based on the IEEE 11073 standard.
+                As a result, the output of LightICE will be independant of the brand of monitor it is connected to and will be standardized to a commonly used terminology.
+              </p>
+            </blockquote>
           </div>
         </div>
       </div>
@@ -98,7 +124,8 @@
                 No work has been done to integrate those proprietary solutions with the remaining pancarte project.
               </p>
               <ul>
-                <li><a target="_blank" href="http://www.capsuletech.fr/">Qualcomm Capsule</a> (cost/room ~<b>10000€</b>)</li>
+                <li><a target="_blank" href="http://www.capsuletech.fr/">Qualcomm Capsule</a> (cost/room <b>10000€</b>)</li>
+                <li><a target="_blank" href="https://www.enovacom.fr/landing-page/connexion-appareils-biomedicaux">Enovacom Patient Connect</a> (cost/room <b>n.a.</b>)</li>
               </ul>
             </div>
           </div>
